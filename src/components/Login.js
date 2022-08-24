@@ -26,7 +26,8 @@ function Login (props) {
           onChange={handleEmailChange}
           placeholder='Email'
           type='email'
-          autoComplete="off"
+          autoComplete='off'
+          value={email ? email : ''}
           required
         ></input>
         <input
@@ -34,7 +35,8 @@ function Login (props) {
           onChange={handlePassChange}
           placeholder='Пароль'
           type='password'
-          autoComplete="off"
+          autoComplete='off'
+          value={password ? password : ''}
           required
         ></input>
         <button className='auth__submit' type='submit'>

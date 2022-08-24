@@ -28,6 +28,7 @@ function Register (props) {
           placeholder='Email'
           type='email'
           autoComplete="off"
+          value={email ? email : ''}
           required
         ></input>
         <input
@@ -36,6 +37,7 @@ function Register (props) {
           placeholder='Пароль'
           type='password'
           autoComplete="off"
+          value={password ? password : ''}
           required
         ></input>
         <button className='auth__submit' type='submit'>
